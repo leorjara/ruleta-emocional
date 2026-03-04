@@ -27,22 +27,6 @@ body {
     transition: background 1.5s ease-in-out;
 }
 
-@media (max-width: 480px) {
-    body {
-        align-items: flex-start;
-        padding-top: 20px;
-    }
-    .ruleta-container {
-        width: 320px;
-        height: 320px;
-        margin: 10px auto;
-    }
-    .titulo {
-        font-size: 1.5rem;
-        margin-top: 10px;
-    }
-}
-
 .interface {
     text-align: center;
     width: 100%;
@@ -153,4 +137,27 @@ body {
     font-weight: 800;
     color: var(--negro);
     font-style: normal;
+}
+
+@media (max-width: 480px) {
+    body {
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    .ruleta-container {
+        width: 320px;
+        height: 320px;
+        margin: 10px auto;
+    }
+    .titulo {
+        font-size: 1.5rem;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    #resultado-texto {
+    margin-top: 25px;
+    }   
+    #btn-girar:hover{
+    margin-top: 20px
+};
 }

@@ -133,6 +133,6 @@ btnGirar.addEventListener("click", () => {
 
         document.body.style.setProperty("--big-dinamico", `${colorEmocion}66`);
         
-        resultado.innerHTML = `Tu emoción primaria es <b>${padre.nombre}</b>, la secundaria es <b>${padre.secundario[indiceH]}</b>`;
+        resultado.innerHTML = `Tu emoción primaria es <b>${padre.nombre}<br></b>La secundaria es <b>${padre.secundario[indiceH]}</b>`;
     }, 5000);
 })
