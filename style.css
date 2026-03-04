@@ -148,3 +148,9 @@ body {
     color: var(--negro);
     font-weight: 100;
 };
+
+#resultado-texto b{
+    font-weight: 800;
+    color: var(--negro);
+    font-style: normal;
+}
