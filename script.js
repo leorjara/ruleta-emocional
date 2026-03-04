@@ -135,4 +135,4 @@ btnGirar.addEventListener("click", () => {
         
         resultado.innerHTML = `Tu emoción primaria es <b>${padre.nombre}</b>, la secundaria es <b>${padre.secundario[indiceH]}</b>`;
     }, 5000);
-});
+})
