@@ -105,6 +105,7 @@ body {
 
 
 #btn-girar {
+    margin-top: 20px;
     padding: 12px 40px;
     font-size: 1.1rem;
     border: none;
@@ -162,6 +163,5 @@ body {
     margin-top: 25px;
     }   
     #btn-girar:hover{
-    margin-top: 20px
 };
 }
