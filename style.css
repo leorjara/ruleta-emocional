@@ -1,0 +1,134 @@
+
+:root {
+    --color-principal: #819A91 ;
+    --color-secundario: #A7C1A8 ;
+    --complemento: #D1D8BE ;
+    --blanco-dirty: #EEEFE0 ;
+    --negro: #000000 ;
+    --tristeza: #1A237E;
+    --ira:#B71C1C;
+    --felicidad:#FFEB3B;
+    --sorpresa:#8BC34A;
+    --disgusto:#FF6F00;
+    --miedo:#8E24AA;
+    --blanco: #FFFFFF;
+}
+
+body {
+    margin : 0 ;
+    padding : 0 ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    min-height: 100vh;
+    background: radial-gradient(circle, var(--blanco-dirty) 30%, var(--big-dinamico, var(--color-secundario)) 100%);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--negro);
+    transition: background 1.5s ease-in-out;
+}
+
+.interface {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.titulo {
+    margin-top: 0;
+    margin-bottom: 1%;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* Contenerdor */
+.ruleta-container {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    margin: 10px auto;
+}
+
+/*Flecha indicador*/
+.indicador {
+    position: absolute;
+    /* Antes estaba lejos, ahora la pegamos al borde superior */
+    top: -5px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    /* Triángulo más pequeño y nítido */
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 20px solid var(--color-principal); /* Color de la flecha */
+    z-index: 10;
+}
+.controles { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.emocion-texto {
+    font-size: 3px;
+    fill: var(--negro);
+    font-weight: 400;
+    pointer-events: none;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.5);
+}
+
+.emocion-texto-secundario {
+    font-size: 2.6px;
+    fill: var(--negro);
+    text-anchor: middle;
+    pointer-events: none;
+    font-family: sans-serif;
+    letter-spacing: 0.1px;
+}
+
+
+#ruleta-svg {
+    width: 100%;
+    height: 100%;
+    /* Tu transición existente */
+    transition: transform 5s cubic-bezier(0.15, 0, 0.15, 1);
+    /* Una sombra suave directa a la ruleta, opcional */
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.1));
+}
+
+
+#btn-girar {
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    border: none;
+    font-weight: 100;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    background-color: var(--color-principal);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+    transition: all 0.3s ease;
+}
+
+#btn-girar:hover{
+    background-color: var(--color-secundario);
+    transform: translateY(-1px);
+}
+
+#resultado-texto {
+    font-size: 25px;
+    margin-top: 10px;
+    font-style: italic;
+    color: var(--negro);
+    font-weight: 100;
+}
