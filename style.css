@@ -139,7 +139,7 @@ body {
 #btn-girar:hover{
     background-color: var(--color-secundario);
     transform: translateY(-1px);
-}
+};
 
 #resultado-texto {
     font-size: 25px;
@@ -149,7 +149,7 @@ body {
     font-weight: 100;
 };
 
-#resultado-texto b{
+#resultado-texto b {
     font-weight: 800;
     color: var(--negro);
     font-style: normal;
