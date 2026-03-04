@@ -30,7 +30,7 @@ body {
 @media (max-width: 480px) {
     body {
         align-items: flex-start;
-        padding-top: 20px;
+        padding-top: 0px;
     }
     .ruleta-container {
         width: 320px;
