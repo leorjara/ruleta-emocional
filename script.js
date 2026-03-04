@@ -94,7 +94,7 @@ function dibujarPrimerNivel() {
 
         // TEXTO DE LAS EMOCIONES     
 
-        const rtexto = 20;
+        const rtexto = 12;
         const tx = 50 + rtexto * Math.cos(rad(anguloMedio));
         const ty = 50 + rtexto * Math.sin(rad(anguloMedio));
         const texto = document.createElementNS("http://www.w3.org/2000/svg", "text");
@@ -102,7 +102,7 @@ function dibujarPrimerNivel() {
         texto.setAttribute("x", tx);
         texto.setAttribute("y", ty);
         texto.setAttribute("class", "emocion-texto");
-        texto.setAttribute("transform", `rotate(${anguloMedio}, ${tx}, ${ty})`);
+        texto.setAttribute("transform", `rotate(${anguloMedio + 90}, ${tx}, ${ty})`);
         texto.textContent = emo.nombre;
         svg.appendChild(texto);
     });
